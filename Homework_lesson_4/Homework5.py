@@ -9,7 +9,7 @@ def search_and_delete_x(list, element_of_list):
     for q, element in enumerate(list):
         if element_of_list in str(element):
             result_list.insert(0, list[q])
-            list.remove(list[q])
+            list[q] = 0
 
 
 with open('file1.txt', 'r') as data:
